@@ -50,7 +50,7 @@ int MenuScene::setFontLua(lua_State* L)
 	lua_getglobal(L, "MainMenu");
 	MenuScene* mainMenu = (MenuScene*)lua_touserdata(L, -1);
 	const char* fontName = lua_tostring(L, 1);
-	//mainMenu->_font.loadFromFile(fontName);
+	mainMenu->_font.loadFromFile(fontName);
 	return 0;
 }
 

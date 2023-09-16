@@ -136,7 +136,6 @@ int GameScene::setEnemyPositionLua(lua_State* L)
 	GameScene* mainEnemy = (GameScene*)lua_touserdata(L, -1);
 	mainEnemy->enePosX = lua_tonumber(L, 1);
 	mainEnemy->enePosY = lua_tonumber(L, 2);
-	//mainPlayer->_player->SetPosition(mainPlayer->initPosX, mainPlayer->initPosY);
 	return 0;
 }
 
